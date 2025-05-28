@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Umumiy konteyner */
+/* Mahsulotlar konteyneri */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #f9fafb;
+}
+
+/* Har bir kartani o'rab turuvchi blok */
+.card-wrapper {
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+
+.detail-info {
+  max-width: 600px;
+}
+
+.detail-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.detail-price {
+  font-size: 26px;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.detail-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+
+.back-button {
+  margin-bottom: 20px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #084298;
+}
+.detail-rating {
+  font-size: 16px;
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Mobil responsivlik */
+@media (max-width: 768px) {
+  .detail-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .detail-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .detail-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .detail-info {
+    text-align: center;
+  }
+}
